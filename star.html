@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>遊戲開始｜Without Plan B</title>
+    <title>星???｜Without Plan B</title>
     <meta name="description" content="">
     <link rel="SHORTCUT ICON" href="img/favicon-20210601033713309.ico">
 
@@ -28,65 +28,97 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script type="text/javascript" src="src/fullpage.js"></script>
-    <link rel="stylesheet" type="text/css" href="src/fullpage.css" /> -->
+        <link rel="stylesheet" type="text/css" href="src/fullpage.css" /> -->
     <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    iframe {
+        border: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-<body>
+    @media (max-width: 767px) {
+        iframe {
+            height: 700px;
+            width: 400px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        iframe {
+            height: 600px;
+            width: 300px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 979px) {
+        iframe {
+            height: 700px;
+            width: 700px;
+        }
+    }
+
+    @media (min-width: 980px) {
+        iframe {
+            height: 700px;
+            width: 900px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        iframe {
+            height: 700px;
+            width: 1100px;
+        }
+    }
+</style>
+
+<body style="margin:0px;">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <!-- <script src="index.js" async defer></script> -->
     <div class="bg2">
     </div>
-
-    <!-- <div id="fullpage"> -->
-    <!-- <div class="section"> -->
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col ">
-                <div class="img-container" data-aos="fade-up" data-aos-duration="3000">
-                    <img src="img/title.png" alt="title" width="800" id="main-img">
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <iframe src="star-frame.html"></iframe>
 
             </div>
         </div>
     </div>
-    <!-- </div> -->
-    <!-- <div class="section"> -->
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col ">
-                <div class="img-container text-container" data-aos="fade-up" data-aos-duration="2000">
-                    <p>副本，是指第二、第三個，甚至其他備案。<br>
-                        人生中，往往因為各式因素，我們不得不啟用 <span>Plan B</span>。<br>
-                        然而，時間一去不返，所有此刻只有一次。選擇過後，就再也無法回頭。<br>
-                        歡迎來到無副本世界，<span>Without Plan B</span>。<br>
-                        在這裡，每個當下都只能選擇一個選項，請勇敢選擇自己所愛與所想。</p>
-                </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="img-container text-container">
+                    <p>在離開無副本世界以前<br>
+                        希望您能夠點擊填寫下放的表單<br>
+                        將您體驗心得傳達跟我們<br>
+                        也為今日的旅程劃下完美的句點<br>
+                    </p>
+
+                </div>
                 <div class="img-container">
-                    <input type="button" onclick="sceneHandler()"
+                    <input type="button" onclick="location.href='要前往的網頁連結'"
                         style="background-image:url('img/start.png'); width:200px">
                     <!-- <button type="button"><img src="img/start_button.png" alt="start" width="400"></button> -->
                 </div>
-                <div class="img-container text-container" data-aos="fade-up" data-aos-duration="2000">
-                    <p>請開啟聲音以獲得更好的遊戲體驗。</p>
-                </div>
                 <div class="img-container text-container">
-                    <p> </p>
+                    <p>感謝您光臨無副本世界，祝福你的下一段旅程，也能勇敢選擇自己的所愛所想
+                    </p>
                 </div>
-
+                <div class="img-container">
+                    <input type="button" onclick="location.href='about-us.html'"
+                        style="background-image:url('img/start.png'); width:200px">
+                    <!-- <button type="button"><img src="img/start_button.png" alt="start" width="400"></button> -->
+                </div>
             </div>
         </div>
-    </div>
-    <!-- </div> -->
-    <!-- </div> -->
-    <script>
-        let now = "1-0";</script>
-    <script src="gameMaster.js"></script>
 
+    </div>
     <script>
         AOS.init();
     </script>
