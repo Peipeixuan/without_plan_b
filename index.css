@@ -36,7 +36,8 @@ body{
 
 .img-container input{
     background-color: transparent;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border: transparent;
     width: 100%;
@@ -64,10 +65,21 @@ body{
     max-width: 100%;
 }
 
+.img-container img{
+    width: 400px;
+}
+
+.img-container.member img{
+    width: 150px;
+}
+
 @media (max-width: 500px) {
     .img-container.selection input{
         height: 90px;
     }   
+    .img-container img{
+    width: 300px;
+    }
     
 }
 

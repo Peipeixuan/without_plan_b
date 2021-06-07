@@ -24,9 +24,62 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYY2CXKNJK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FYY2CXKNJK');
+    </script>
 </head>
+<style>
+.end-left1{
+    margin-right: 130px;
+}
+
+.end-left2{
+    margin-right: 90px;
+}
+
+.end-left3{
+    margin-right: 60px;
+}
+
+.end-right1{
+    margin-left: 130px;
+}
+.end-right2{
+    margin-left: 90px;
+}
+
+@media (max-width: 500px) {
+   .end-left1{
+    margin-right: 60px;
+}
+
+.end-left2{
+    margin-right: 40px;
+}
+
+.end-left3{
+    margin-right: 20px;
+}
+
+.end-right1{
+    margin-left: 60px;
+}
+.end-right2{
+    margin-left: 60px;
+}
+    
+}
+
+</style>
 
 <body>
     <!--[if lt IE 7]>
@@ -37,36 +90,64 @@
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col-12 col-md-6">
-                <div class="img-container" style="margin-left: 120px;">
-                    <img src="img/ending1.jpg" alt="" width="400">
+                <div class="img-container end-left1" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/ending1.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="row justify-content-sm-center">
             <div class="col-12 col-md-6">
-                <div class="img-container" style="margin-left: 120px;">
-                    <img src="img/ending1.jpg" alt="" width="400">
+                <div class="img-container end-left2" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/line3.png" alt="">
                 </div>
             </div>
         </div>
         <div class="row justify-content-sm-center">
             <div class="col-12 col-md-6">
-                <div class="img-container" style="margin-right: 40px;">
-                    <img src="img/ending2.jpg" alt="" width="400">
+                <div class="img-container end-right1" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/ending2.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="row justify-content-sm-center">
             <div class="col-12 col-md-6">
-                <div class="img-container" style="margin-left: 60px;">
-                    <img src="img/ending1.jpg" alt="" width="400">
+                <div class="img-container end-right2" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/line2.png" alt="">
                 </div>
             </div>
         </div>
         <div class="row justify-content-sm-center">
             <div class="col-12 col-md-6">
-                <div class="img-container" style="margin-left: 120px;">
-                    <img src="img/ending3.jpg" alt="" width="400">
+                <div class="img-container end-left3" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/ending3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-md-6">
+                <div class="img-container end-right2" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/line.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-md-6">
+                <div class="img-container end-right1" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/ending4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-md-6">
+                <div class="img-container end-right2" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/line3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-md-6">
+                <div class="img-container end-left3" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/ending5.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -84,7 +165,7 @@
 
                 <div class="img-container">
                     <input type="button" onclick="location.href='star.html'"
-                        style="background-image:url('img/start.png'); width:200px">
+                        style="background-image:url('img/goStar.png'); width:400px">
                     <!-- <button type="button"><img src="img/start_button.png" alt="start" width="400"></button> -->
                 </div>
 
@@ -92,7 +173,9 @@
             </div>
         </div>
     </div>
-
+<script>
+        AOS.init();
+    </script>
 
     <script src="" async defer></script>
 </body>

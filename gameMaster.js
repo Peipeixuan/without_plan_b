@@ -38,13 +38,13 @@ function getRandomArbitrary(min, max) {
 
 function changescence() {
     count++;
-    if (count >= 5 && count <= 6) {
+    if (count >= 6 && count <= 7) {
         if (number % 2 == 0) {
             //結束
             window.location.href = 'end.html';
 
         }
-    } else if (count > 6) {
+    } else if (count > 7) {
         //結束遊戲
         window.location.href = 'end.html';
     } else {
