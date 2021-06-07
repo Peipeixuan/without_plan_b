@@ -66,11 +66,16 @@ body{
 }
 
 .img-container img{
-    width: 400px;
+    object-fit: cover;
+}
+
+.img-container.selection{
+    object-fit: cover;
 }
 
 .img-container.member img{
-    width: 150px;
+    object-fit: cover;
+    width: 100%;
 }
 
 @media (max-width: 500px) {
