@@ -74,13 +74,20 @@ body{
     object-fit: cover;
 }
 
+.img-container div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+}
+
 .img-container.selection{
     object-fit: cover;
 }
 
 .img-container.member img{
     object-fit: cover;
-    height: auto;
+    height: 184px;
     width: 150px;
     max-width: 100%;
 }
