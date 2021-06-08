@@ -49,39 +49,17 @@ function changescence() {
         window.location.href = 'end.html';
     } else {
         //換場景
-        window.location.href = `${randomScenes[rightnumber]}.html?pluckFlower=${pluckFlower}&isFly=${isFly}&leaveHighway=${leaveHighway}&isEaten=${isEaten}&useUmbrellla=${useUmbrellla}&count=${count}`;
+        if (randomScenes[rightnumber] != undefined) {
+            window.location.href = `${randomScenes[rightnumber]}.html?pluckFlower=${pluckFlower}&isFly=${isFly}&leaveHighway=${leaveHighway}&isEaten=${isEaten}&useUmbrellla=${useUmbrellla}&count=${count}`;
+        } else {
+            window.location.href = `1-1.html?pluckFlower=${pluckFlower}&isFly=${isFly}&leaveHighway=${leaveHighway}&isEaten=${isEaten}&useUmbrellla=${useUmbrellla}&count=${count}`;
+
+        }
+
     }
 
 
 }
-
-// void changescence()
-// {
-
-//     count++;
-//     history.Insert(0, topic);//紀錄增加
-//     if (count >= 5 && count <= 6) {
-//         foreach(string s in history)
-//         {
-//             Debug.Log(s);
-//         }
-//         //隨機決定是否離開
-//         if (number % 2 == 0) {
-//             //結束遊戲
-//             Debug.Log("over!!!!");
-//             SceneManager.LoadScene("ending");
-
-//         }
-//     } else if (count > 6) {
-//         //結束遊戲
-//         Debug.Log("over!!!!");
-//         SceneManager.LoadScene("ending");
-//     }
-
-//     SceneManager.LoadScene(randomScenes[rightnumber]);
-//     now = randomScenes[rightnumber];
-
-// }
 
 
 function sceneHandler() {
