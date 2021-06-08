@@ -49,6 +49,7 @@ function changescence() {
         window.location.href = 'end.html';
     } else {
         //換場景
+        console.log(randomScenes[rightnumber]);
         if (randomScenes[rightnumber] != undefined) {
             window.location.href = `${randomScenes[rightnumber]}.html?pluckFlower=${pluckFlower}&isFly=${isFly}&leaveHighway=${leaveHighway}&isEaten=${isEaten}&useUmbrellla=${useUmbrellla}&count=${count}`;
         } else {
