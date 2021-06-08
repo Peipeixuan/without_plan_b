@@ -62,7 +62,12 @@ body{
 }
 
 .question-img{
-    max-width: 100%;
+    width: 570px;
+    min-width: 300px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .img-container img{
@@ -75,7 +80,8 @@ body{
 
 .img-container.member img{
     object-fit: cover;
-    width: 100%;
+    width: 150px;
+    max-width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -83,7 +89,11 @@ body{
         height: 90px;
     }   
     .img-container img{
-    width: 300px;
+        /* width: 300px; */
+    }
+
+    .question-img{
+        height: 180px;
     }
     
 }
