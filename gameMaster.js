@@ -21,9 +21,9 @@ let rightnumber;
 let count = url.searchParams.get('count') || 1;
 
 function randomHandler() {
-    number = Math.ceil(getRandomArbitrary(0, randomScenes.length));
+    number = Math.floor(getRandomArbitrary(0, randomScenes.length));
     if (randomScenes[number] == now) {
-        number = Math.ceil(getRandomArbitrary(0, randomScenes.length));
+        number = Math.floor(getRandomArbitrary(0, randomScenes.length));
     }
     else {
         rightnumber = number;
